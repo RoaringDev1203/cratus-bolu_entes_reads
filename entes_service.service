@@ -1,0 +1,10 @@
+After=network.target
+
+[Service]
+Type=simple
+User=root
+ExecStart=/usr/local/bin/python3.9 /home/ubuntu/bolu_entes_reads/modbusEntes.py
+WorkingDirectory=/home/ubuntu/bolu_entes_reads/
+
+[Install]
+WantedBy=multi-user.target
